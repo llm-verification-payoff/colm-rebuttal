@@ -16,7 +16,7 @@ into ``viz/``. Filenames match the figure number in the paper:
     figure_7: task-level scatter (Sec 5.5)
     figure_8: solver bad-count bar plot (Appendix)
     figure_9: solver per-task scatter (Appendix)
-    figure_10: F1 / Precision scatter (Appendix B)
+    figure_10: F1 / Precision scatter (Appendix G)
     figure_11: verifier metrics vs likelihood (Appendix I)
     figure_12: post-training solver bar plot (Appendix)
     R1-W3: theoretical vs empirical gain (rebuttal)

@@ -1,13 +1,13 @@
 """CLI output of this script:
 
-W1: 12-model subset, averaged over 9 datasets and over solver-verifier pairs per verification setting.
+12-model subset, averaged over 9 datasets and over solver-verifier pairs per verification setting.
 
 verification setting    verifier gain    FNR    avg. number of candidates
 self                            +1.2%    38%    2.8
 intra-family                    +2.2%    42%    3.0
 cross-family                    +6.2%    36%    3.3
 
-Run with: python r1_w1.py
+Run with: python gain_fnr_candidates.py
 """
 import csv
 import os
@@ -61,7 +61,7 @@ def by_setting(matrix):
 
 gain_s, fnr_s, cand_s = by_setting(gain), by_setting(fnr), by_setting(cand)
 
-print("W1: 12-model subset, averaged over 9 datasets and over solver-verifier pairs per verification setting.\n")
+print("12-model subset, averaged over 9 datasets and over solver-verifier pairs per verification setting.\n")
 print(f"{'verification setting':<22}{'verifier gain':>15}{'FNR':>7}    avg. number of candidates")
 for s, label in [("self", "self"), ("intra", "intra-family"), ("cross", "cross-family")]:
     print(f"{label:<22}{gain_s[s] * 100:>+14.1f}%{fnr_s[s] * 100:>6.0f}%    {cand_s[s]:.1f}")

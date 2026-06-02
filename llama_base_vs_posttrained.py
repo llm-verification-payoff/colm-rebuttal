@@ -6,7 +6,7 @@ Llama3 base vs post-trained verifier gain, by verification setting
   Llama3-Base      -0.083   -0.082   -0.527
   Llama3           +0.020   +0.055   +0.032
 
-Run with: python r2_w2.py
+Run with: python llama_base_vs_posttrained.py
 """
 import numpy as np
 

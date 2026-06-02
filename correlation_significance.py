@@ -23,7 +23,7 @@ Theoretical Verifier Gain vs empirical 10-attempt rejection-sampling gain, 12-mo
 3. Figure 5 spot-check: cross-family similarity vs verifier FPR
    n = 108   r +0.613   p < 0.001
 
-Run with: python r3_w3.py
+Run with: python correlation_significance.py
 """
 import csv
 import os
